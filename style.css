@@ -1,0 +1,66 @@
+@font-face {
+    font-family:hell ;
+    src: url(fonts/HelveticaNowText-Regular.woff2);
+}
+
+@font-face {
+    font-family: fut;
+    src: url(fonts/Futura-Bold.woff2);
+}
+:root{
+    --hell:hell;
+    --fut:fut;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height:100%;
+}
+.page1{
+  min-height: 100vh;
+    position: relative;
+    width: 100%;
+    padding: 220px 10px 0px 10px;
+   
+    
+}
+.page1 h1{
+    font-size: 15vw;
+    font-family:var(--fut);
+    text-transform: uppercase;
+    line-height: 13vw;
+    text-align: center;
+    letter-spacing: -5px;
+  
+}
+.vedeo-container{
+    width: 100%;
+    margin-top: 10px;
+    height: 54vw;
+    background-color: grey;
+    position: relative;
+   
+}
+.vedeo-container video{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+    
+}
+.vedeo-container .play{
+    padding: 45px 30px;
+    background-color: black;
+   
+    color: white;
+    font-family: var(--fut);
+    font-size: 16px;
+    position: fixed;
+    border-radius: 50%;
+    opacity: 0;
+    scale: 0;
+}
